@@ -22,6 +22,7 @@ export function createApp({ prisma, jwtSecret, frontendOrigin = 'http://localhos
       await prisma.$queryRaw`SELECT 1`
       res.json({ status: 'ok', database: 'connected' })
     } catch {
+      console.error('Health check could not reach the database.')
       res.status(503).json({ status: 'error', database: 'unavailable' })
     }
   })

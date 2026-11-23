@@ -16,7 +16,7 @@ O primeiro administrador é criado a partir de `ADMIN_EMAIL` e `ADMIN_PASSWORD` 
 
 ## Desenvolvimento
 
-Na pasta `backend`, instale dependências com `npm install`, configure `DATABASE_URL` e `JWT_SECRET` em `.env` e execute `npm run dev`. Na pasta `frontend`, execute `npm install` e `npm run dev`.
+Para rodar o backend fora do container, mantenha o PostgreSQL iniciado com `docker compose up -d database`. A porta local `5432` é encaminhada ao banco do Compose. Na pasta `backend`, configure `POSTGRES_PASSWORD` e `JWT_SECRET` em `.env` e execute `npm run dev`; a conexão local usa o banco `estulanches` e o usuário `estulanches`. Se preferir, configure `DATABASE_URL` diretamente. Na pasta `frontend`, execute `npm install` e `npm run dev`.
 
 O backend usa os scripts `npm test`, `npm run test:unit` e `npm run test:integration`. O health check da API está em `/api/health`.
 

@@ -19,3 +19,12 @@ test('codifica caracteres especiais na senha da URL PostgreSQL', () => {
 test('preserva DATABASE_URL quando ela já está configurada', () => {
   assert.equal(configureDatabaseUrl({ DATABASE_URL: 'postgresql://localhost:5432/estu' }), 'postgresql://localhost:5432/estu')
 })
+
+test('usa a configuração local do Compose para desenvolvimento', () => {
+  const url = configureDatabaseUrl({ POSTGRES_PASSWORD: 'local@password' })
+  const parsed = new URL(url)
+  assert.equal(parsed.hostname, 'localhost')
+  assert.equal(parsed.pathname, '/estulanches')
+  assert.equal(parsed.username, 'estulanches')
+  assert.equal(decodeURIComponent(parsed.password), 'local@password')
+})
