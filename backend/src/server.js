@@ -13,7 +13,7 @@ const [{ createApp }, { prisma }] = await Promise.all([
   import('./lib/prisma.js'),
 ])
 
-const port = Number(process.env.PORT ?? 3000)
+const port = Number(process.env.PORT ?? 8080)
 const app = createApp({ prisma, jwtSecret: process.env.JWT_SECRET, frontendOrigin: process.env.FRONTEND_ORIGIN })
 const server = app.listen(port, '0.0.0.0', () => console.log(`API EstuLanches disponível na porta ${port}.`))
 
