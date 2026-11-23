@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-labelledby="title description">
+  <title id="title">Escala nacional do EstuLanches</title>
+  <desc id="description">Fluxo visual de usuários, distribuição de tráfego, frontend, APIs, cache, fila e banco de dados.</desc>
+  <defs>
+    <style>
+      text{font-family:Arial,'Segoe UI',sans-serif;fill:#25362c}.title{font-size:34px;font-weight:700}.sub{font-size:17px;fill:#66756a}.heading{font-size:16px;font-weight:700}.copy{font-size:13px;fill:#65746a}.micro{font-size:11px;fill:#718076}.box{fill:#fff;stroke:#dce5dc;stroke-width:2}.green{fill:#f0f6ef;stroke:#a7c3a6;stroke-width:2}.mint{fill:#e6f1e5;stroke:#9bb99b;stroke-width:2}.blue{fill:#eef4f8;stroke:#b7cbd7;stroke-width:2}.sand{fill:#fbf4e7;stroke:#e2c991;stroke-width:2}.lavender{fill:#f2eff8;stroke:#c8bcda;stroke-width:2}.arrow{fill:none;stroke:#728b76;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}.arrowBlue{fill:none;stroke:#7d9eaa;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowBlue)}.iconStroke{fill:none;stroke:#426d4b;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}.iconBlue{fill:none;stroke:#547f91;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}.iconSand{fill:none;stroke:#9a7530;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#728b76"/></marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#7d9eaa"/></marker>
+  </defs>
+  <rect width="1500" height="900" fill="#f7f9f6"/>
+  <text x="64" y="70" class="title">EstuLanches em escala nacional</text>
+  <text x="64" y="103" class="sub">Uma arquitetura para acompanhar o crescimento do acesso</text>
+  <rect x="1084" y="48" width="170" height="64" rx="15" fill="#fff" stroke="#dce5dc"/>
+  <text x="1169" y="76" text-anchor="middle" font-size="22" font-weight="700">1 milhão</text>
+  <text x="1169" y="97" text-anchor="middle" class="micro">de usuários</text>
+  <rect x="1270" y="48" width="170" height="64" rx="15" fill="#fff" stroke="#dce5dc"/>
+  <text x="1355" y="76" text-anchor="middle" font-size="22" font-weight="700">100 mil</text>
+  <text x="1355" y="97" text-anchor="middle" class="micro">simultâneos</text>
+
+  <rect x="48" y="145" width="1404" height="285" rx="22" fill="#fff" stroke="#e2e8e1"/>
+  <text x="76" y="180" class="micro" font-weight="700" letter-spacing="1.4">ACESSO E PROCESSAMENTO</text>
+
+  <rect x="86" y="220" width="190" height="150" rx="18" class="box"/>
+  <circle cx="181" cy="267" r="29" fill="#edf4eb"/>
+  <circle cx="171" cy="260" r="7" class="iconStroke"/><circle cx="191" cy="260" r="7" class="iconStroke"/>
+  <path d="M157 284c1-10 8-15 14-15s13 5 14 15M177 284c1-10 8-15 14-15s13 5 14 15" class="iconStroke"/>
+  <text x="181" y="320" text-anchor="middle" class="heading">Pessoas no Brasil</text>
+  <text x="181" y="343" text-anchor="middle" class="copy">alunos e equipes escolares</text>
+
+  <path d="M276 295H328" class="arrow"/>
+  <rect x="337" y="220" width="190" height="150" rx="18" class="blue"/>
+  <circle cx="432" cy="267" r="29" fill="#e2edf2"/>
+  <circle cx="432" cy="267" r="19" class="iconBlue"/><path d="M413 267h38M432 248c6 6 8 12 8 19s-2 13-8 19M432 248c-6 6-8 12-8 19s2 13 8 19M416 257h32M416 277h32" class="iconBlue"/>
+  <text x="432" y="320" text-anchor="middle" class="heading">CDN e proteção</text>
+  <text x="432" y="343" text-anchor="middle" class="copy">entrega rápida da interface</text>
+
+  <path d="M527 295H579" class="arrow"/>
+  <rect x="588" y="220" width="190" height="150" rx="18" class="lavender"/>
+  <circle cx="683" cy="267" r="29" fill="#eae5f2"/>
+  <path d="M668 255h30M668 267h30M668 279h30M674 249v36M692 249v36" class="iconStroke"/>
+  <text x="683" y="320" text-anchor="middle" class="heading">Balanceador</text>
+  <text x="683" y="343" text-anchor="middle" class="copy">reparte as requisições</text>
+
+  <path d="M778 295H818V250H846M818 295V360H846" class="arrow"/>
+  <rect x="855" y="198" width="245" height="105" rx="16" class="green"/>
+  <circle cx="892" cy="250" r="23" fill="#deebdc"/>
+  <rect x="879" y="239" width="26" height="21" rx="3" class="iconStroke"/><path d="M879 246h26M887 260v5M897 260v5" class="iconStroke"/>
+  <text x="930" y="244" class="heading">Frontend React</text>
+  <text x="930" y="266" class="copy">várias instâncias</text>
+  <text x="930" y="285" class="micro">interface disponível</text>
+
+  <rect x="855" y="322" width="245" height="105" rx="16" class="mint"/>
+  <circle cx="892" cy="374" r="23" fill="#d8ead6"/>
+  <path d="M883 365h18v18h-18zM887 360v5M897 360v5M887 383v5M897 383v5M878 370h5M878 378h5M901 370h5M901 378h5" class="iconStroke"/>
+  <text x="930" y="368" class="heading">API Express</text>
+  <text x="930" y="390" class="copy">várias instâncias</text>
+  <text x="930" y="409" class="micro">processa pedidos e consultas</text>
+
+  <path d="M1100 374H1155V260H1180M1155 374V365H1180M1155 365V395H1180" class="arrowBlue"/>
+  <rect x="1189" y="198" width="220" height="90" rx="16" class="sand"/>
+  <circle cx="1225" cy="243" r="22" fill="#f4e8c9"/>
+  <path d="M1215 236h20M1215 243h20M1215 250h20M1219 232v22M1231 232v22" class="iconSand"/>
+  <text x="1260" y="239" class="heading">Cache</text><text x="1260" y="261" class="copy">acelera consultas comuns</text>
+  <rect x="1189" y="320" width="220" height="90" rx="16" class="sand"/>
+  <circle cx="1225" cy="365" r="22" fill="#f4e8c9"/>
+  <rect x="1213" y="352" width="24" height="26" rx="3" class="iconSand"/><path d="M1218 359h14M1218 365h14M1218 371h9" class="iconSand"/>
+  <text x="1260" y="361" class="heading">Fila + workers</text><text x="1260" y="383" class="copy">tarefas em segundo plano</text>
+
+  <rect x="48" y="465" width="1404" height="315" rx="22" fill="#fff" stroke="#e2e8e1"/>
+  <text x="76" y="500" class="micro" font-weight="700" letter-spacing="1.4">DADOS E OPERAÇÃO</text>
+
+  <path d="M977 427V515H335V548" class="arrowBlue"/>
+  <path d="M977 427V530H721V548" class="arrowBlue"/>
+  <rect x="190" y="560" width="290" height="150" rx="18" class="blue"/>
+  <ellipse cx="335" cy="595" rx="39" ry="13" fill="#dce9ef" stroke="#547f91" stroke-width="2.5"/>
+  <path d="M296 595v45c0 8 17 14 39 14s39-6 39-14v-45M296 618c0 8 17 14 39 14s39-6 39-14" class="iconBlue"/>
+  <text x="335" y="676" text-anchor="middle" class="heading">Banco principal</text>
+  <text x="335" y="697" text-anchor="middle" class="copy">grava pedidos e dados</text>
+
+  <path d="M480 635H567" class="arrowBlue"/>
+  <rect x="576" y="560" width="290" height="150" rx="18" class="blue"/>
+  <ellipse cx="721" cy="595" rx="39" ry="13" fill="#dce9ef" stroke="#547f91" stroke-width="2.5"/>
+  <path d="M682 595v45c0 8 17 14 39 14s39-6 39-14v-45M682 618c0 8 17 14 39 14s39-6 39-14" class="iconBlue"/>
+  <text x="721" y="676" text-anchor="middle" class="heading">Réplicas de leitura</text>
+  <text x="721" y="697" text-anchor="middle" class="copy">distribuem consultas</text>
+
+  <rect x="1000" y="560" width="290" height="150" rx="18" class="lavender"/>
+  <circle cx="1145" cy="608" r="31" fill="#e9e3f1"/>
+  <path d="M1128 619v-12M1140 619v-23M1152 619v-17M1164 619v-31M1125 624h42" class="iconStroke"/>
+  <text x="1145" y="676" text-anchor="middle" class="heading">Métricas e alertas</text>
+  <text x="1145" y="697" text-anchor="middle" class="copy">acompanham saúde e capacidade</text>
+
+  <rect x="48" y="815" width="1404" height="48" rx="12" fill="#eaf1e8"/>
+  <text x="750" y="845" text-anchor="middle" font-size="14" font-weight="600" fill="#49634d">Mais acessos → mais instâncias de aplicação → dados distribuídos e monitorados</text>
+</svg>
