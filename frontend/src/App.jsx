@@ -133,8 +133,8 @@ function App() {
       {section === 'cardapio' ? (
         <>
           <section className="intro" id="inicio">
-            <div><p className="eyebrow">CANTINA ESCOLAR</p><h1>Uma pausa gostosa<br />no seu dia.</h1><p className="intro-copy">Escolha seus favoritos e faça seu pedido. A gente prepara tudo com carinho.</p></div>
-            <div className="today-card"><span>HOJE NA CANTINA</span><strong>Bom recreio!</strong><small>Pedidos disponíveis durante o intervalo</small></div>
+            <div><p className="eyebrow">ESTULANCHES</p><h1>Cardápio da cantina</h1><p className="intro-copy">Escolha os produtos, informe sua turma e envie o pedido.</p></div>
+            <div className="today-card"><span>Pedidos do intervalo</span><strong>Confira as opções de hoje</strong><small>Os pedidos são retirados no balcão.</small></div>
           </section>
 
           <section className="menu-layout">
@@ -142,7 +142,6 @@ function App() {
               <div className="section-heading"><div><p className="eyebrow">FEITO HOJE</p><h2>Nosso cardápio</h2></div><span>{products.length} opções</span></div>
               <div className="product-list">
                 {products.map((product) => <article className="product-card" key={product.id}>
-                  <div className="product-icon" aria-hidden="true">{product.category.toLowerCase().includes('bebida') ? '◌' : '✳'}</div>
                   <div className="product-info"><span className="category-label">{product.category}</span><h3>{product.name}</h3><p>{product.description || 'Preparado fresquinho para o seu intervalo.'}</p><strong>{money(product.price)}</strong></div>
                   <button className="add-button" onClick={() => setCart((current) => ({ ...current, [product.id]: (current[product.id] ?? 0) + 1 }))} aria-label={`Adicionar ${product.name}`}>+</button>
                   {cart[product.id] > 0 && <span className="item-count">{cart[product.id]}</span>}
